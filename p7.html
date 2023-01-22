@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Restaurants</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+    <script src="https://kit.fontawesome.com/569b0e84ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+   <div class="container">
+    <header id="header" class="container">
+           <img id="logo" src="redmonkey_burned.png " alt="error img"/>
+          <!-- Navigation -->
+        <nav id="navbar" class="row">
+                           <div class="col-lg-12">
+                    <div class="btn-toolbar">
+                        <div class="btn-group btn-group-justified">
+                            <button  class="btn-group btn-lg" href="#">Projet 5</button>
+                            <button  class="btn-group btn-lg" href="#">Projet 6</button>
+                            <button  class="btn-group btn-lg" href="#">Projet 7</button>
+                            <button  class="btn-group btn-lg" href="#">Projet 8</button>
+                            <button  class="btn-group btn-lg" href="#">Contact</button>
+                       </div>
+                    </div>
+                </div>
+          </nav>
+    </header>
+        <div id="page_content" class="row">
+        <div class="container" id="filter">
+        <div class="f">
+        <p><h5>Rechercher des restaurants avec une note de :</h5> </p>
+        <select class="" name="option" id="option">
+        <option value="1">1 étoile</option>
+        <option value="2">> ou = 2 étoiles</option>
+        <option value="3">> ou = 3 étoiles</option>
+        <option value="4">> ou = 4 étoiles</option>
+        <option value="5">> ou = 5 étoiles</option>
+        </select>
+        <input id="filterBtn" type="button" value="filter">
+        </div>      
+        </div>
+                <section id="restList" class="container">
+                <div class="container" id="restoDescription"></div>
+                
+                <div id="commentArea">
+                <label for="pseudo">Votre pseudo</label>
+               
+                <input id="pseud" type="text" required><br>
+                
+                <label for="">Commentaire</label>
+                
+                <textarea name="comText" id="textarea" cols="30" rows="10"></textarea>
+                <input id="postCom" type="button" value="Envoyer">
+                </div>
+                </section>         
+                <section id="Map" class="container">
+                   
+                <div class="container" id="imgMap"></div>
+                <div id="infomap" class="resto"> 
+
+       
+      </div>
+                </section> 
+        </div>
+
+    </div> 		
+    		
+    	
+  
+    <!-- Footer -->
+    <footer class="container">
+        
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+   
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUn2tkIJwTWH5gBpF1SKw7tbfysSeTfjE"></script> 
+    <script type="text/javascript" src="js/ajaxGet.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript" src="js/apiMapv3.js"></script>
+   
+    
+</body>
+
+</html>
